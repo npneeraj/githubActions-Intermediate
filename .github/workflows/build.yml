@@ -3,10 +3,10 @@
 name: npneeraj
 
 # Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
+# on:
+#   # Triggers the workflow on push or pull request events but only for the "main" branch
+#   push:
+#     branches: [ "main" ]
   # pull_request:
   #   branches: [ "main" ]
 
@@ -71,7 +71,7 @@ jobs:
         run: | 
           cd pycode
           python test2.py
-          
+
   #specific job to take user input into variables 'a' & 'b'
   job3:
     runs-on: ubuntu-latest
